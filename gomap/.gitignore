@@ -1,0 +1,10 @@
+.class
+.jar
+Thumbs.db
+bin
+gen
+build
+build.xml
+nbproject
+gomap_key
+gomap.apk
