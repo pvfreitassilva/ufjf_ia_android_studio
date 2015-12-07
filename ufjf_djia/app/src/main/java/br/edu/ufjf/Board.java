@@ -55,40 +55,27 @@ public class Board {
 			{1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0},
 			{1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0}};
 	
-	public Point player;
+	public Player player;
 	public List <Enemy> enemies;
 	//public Point goal;
 	public Graph graph;
 	
 	public Board(){
 		
-		player = new Point(0,0);
+		player = new Player(new Point(0,0));
 
 		graph = new Graph(this);
 		
-		enemies = new ArrayList<Enemy>();		
+		enemies = new ArrayList<Enemy>();
 		
-		enemies.add(new Enemy(Board.GRID_X_SIZE-1, Board.GRID_Y_SIZE-1, Search.GULOSA));
-		enemies.add(new Enemy(0, Board.GRID_Y_SIZE-1, Search.GULOSA));
-		//Random r = new Random();
-		//grid = new int[GRID_SIZE*2][GRID_SIZE];		
-		
-		/*for (int i=0;i<GRID_X_SIZE ;i++){
-            for (int j=0;j<GRID_Y_SIZE ;j++) {
-            	if(r.nextInt(4)==3)
-                //grid[i][j] =  r.nextInt(2);      
-            		grid[i][j] = 1;
-            	else
-            		grid[i][j] = 0;
-            }
-        }*/
-        
+		enemies.add(new Enemy( new Point(Board.GRID_X_SIZE-1, Board.GRID_Y_SIZE-1), player.point, graph, Search.AESTRELA));
+		enemies.add(new Enemy( new Point(0, Board.GRID_Y_SIZE-1), player.point, graph, Search.GULOSA));
 	}
 	
 	public void makeEnemiesMove(Graph graph){
 		
 		for(Enemy enemy : enemies){
-			enemy.makeMove(graph, player);
+			enemy.makeMove();
 		}
 	}
 	
@@ -96,36 +83,36 @@ public class Board {
 		
 		boolean makeMove=false;
 		
-		if( x >= player.x - 1 &&
-			x <= player.x + 1 &&
-			y >= player.y - 1 &&
-			y <= player.y + 1){
+		if( x >= player.point.x - 1 &&
+			x <= player.point.x + 1 &&
+			y >= player.point.y - 1 &&
+			y <= player.point.y + 1){
 			
-			if( x == player.x +1 					&&
-				player.x < Board.GRID_X_SIZE - 1	&&
-				Board.grid[player.x+1][player.y] != BARRIER){
-				player.x++;
+			if( x == player.point.x +1 					&&
+				player.point.x < Board.GRID_X_SIZE - 1	&&
+				Board.grid[player.point.x+1][player.point.y] != BARRIER){
+				player.point.x++;
 				makeMove=true;
 			}
 			else
-			if( x == player.x -1 	&&
-				player.x > 0		&&
-				Board.grid[player.x-1][player.y] != BARRIER){
-				player.x--;
+			if( x == player.point.x -1 	&&
+				player.point.x > 0		&&
+				Board.grid[player.point.x-1][player.point.y] != BARRIER){
+				player.point.x--;
 				makeMove=true;
 			}
 				
-			if( y == player.y +1					&&
-				player.y < Board.GRID_Y_SIZE - 1	&&
-				Board.grid[player.x][player.y +1] != BARRIER){
-				player.y++;
+			if( y == player.point.y +1					&&
+				player.point.y < Board.GRID_Y_SIZE - 1	&&
+				Board.grid[player.point.x][player.point.y +1] != BARRIER){
+				player.point.y++;
 				makeMove=true;
 			}
 			else
-			if( y == player.y -1 	&&
-				player.y > 0		&&
-				Board.grid[player.x][player.y -1] != BARRIER){
-				player.y--;
+			if( y == player.point.y -1 	&&
+				player.point.y > 0		&&
+				Board.grid[player.point.x][player.point.y -1] != BARRIER){
+				player.point.y--;
 				makeMove=true;
 			}
 		}
@@ -138,16 +125,16 @@ public class Board {
 	
 	public int getGameState(){
 		
-		if( grid[player.x][player.y] == GOAL )
+		if( grid[player.point.x][player.point.y] == GOAL )
 			return PLAYERWIN;
 		else{
 			
 			for(Enemy e : enemies){
-				if(	(e.x == player.x   && e.y == player.y  ) ||
-					(e.x == player.x+1 && e.y == player.y  ) ||
-					(e.x == player.x   && e.y == player.y+1) ||
-					(e.x == player.x-1 && e.y == player.y  ) ||
-					(e.x == player.x   && e.y == player.y-1)){
+				if(	(e.point.x == player.point.x   && e.point.y == player.point.y  ) ||
+					(e.point.x == player.point.x+1 && e.point.y == player.point.y  ) ||
+					(e.point.x == player.point.x   && e.point.y == player.point.y+1) ||
+					(e.point.x == player.point.x-1 && e.point.y == player.point.y  ) ||
+					(e.point.x == player.point.x   && e.point.y == player.point.y-1)){
 					return GAMEOVER;
 				}
 			}

@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Point;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -14,18 +15,12 @@ import android.view.View;
 public class GameView extends View{
 
 	private Board board;
-	//private boolean dragging;
 	private Paint paint;
-	//private Graph graph;
 	private int gameState;
-	
-	
+
 	public GameView(Context context) {
 		super(context);
 		board = new Board();
-		
-
-		
 		paint = new Paint();
 		gameState = Board.RESUME;
 	}
@@ -39,37 +34,20 @@ public class GameView extends View{
 		drawLines(canvas);		
 		
 		paint.setColor(Color.GREEN);
-		canvas.drawCircle(board.player.x * squareSize + squareSize/2, board.player.y*squareSize + squareSize/2, squareSize/2, paint);
-		
-		//paint.setColor(Color.RED);
+		canvas.drawCircle(board.player.point.x * squareSize + squareSize/2, board.player.point.y*squareSize + squareSize/2, squareSize/2, paint);
+
 		for(Enemy enemy : board.enemies){
 
-
-			//paint.setColor(Color.BLUE);
-			//for(Node n : enemy.pathAestrela){
-            //    canvas.drawCircle(n.x * squareSize + squareSize/2 -squareSize/4, n.y*squareSize + squareSize/2 -squareSize/4, squareSize/4, paint);
-			//}
-
-			//paint.setColor(Color.GRAY);
-			//for(Node n : enemy.pathGulosa){
-			//	canvas.drawCircle(n.x * squareSize + squareSize/2 +squareSize/4, n.y*squareSize + squareSize/2 -squareSize/4, squareSize/4, paint);
-			//}
-
-			//paint.setColor(Color.MAGENTA);
-			//for(Node n : enemy.pathOrdenada){
-			//	canvas.drawCircle(n.x * squareSize + squareSize/2 -squareSize/4, n.y*squareSize + squareSize/2 +squareSize/4, squareSize/4, paint);
-			//}
-
 			paint.setColor(Color.MAGENTA);
-			for(Node n : enemy.path) {
-				canvas.drawCircle(n.x * squareSize + squareSize / 2 - squareSize / 4, n.y * squareSize + squareSize / 2 + squareSize / 4, squareSize / 4, paint);
+			for(Point p : enemy.getPath()) {
+				canvas.drawCircle(p.x * squareSize + squareSize / 2 - squareSize / 4, p.y * squareSize + squareSize / 2 + squareSize / 4, squareSize / 4, paint);
 			}
 
-            if(enemy.path==null || enemy.path.isEmpty()) paint.setColor(Color.BLACK);
+            if(enemy.getPath()==null || enemy.getPath().isEmpty()) paint.setColor(Color.BLACK);
 			else paint.setColor(Color.RED);
 
-			canvas.drawCircle(enemy.x * squareSize + squareSize/2, enemy.y*squareSize + squareSize/2, squareSize/2, paint);
-		//canvas.drawCircle(board.enemy2.x * squareSize + squareSize/2, board.enemy2.y*squareSize + squareSize/2, squareSize/2, paint);
+			canvas.drawCircle(enemy.point.x * squareSize + squareSize/2, enemy.point.y*squareSize + squareSize/2, squareSize/2, paint);
+
 		}
 		
 		if(gameState == Board.GAMEOVER){
