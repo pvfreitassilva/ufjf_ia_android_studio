@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/navy_background">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:text="Tamanho do Mapa"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDificulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5dp">
+	    <RadioButton
+	        android:id="@+id/rbFacil"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Pequeno"
+	        android:checked="true" 
+	        />
+	    <RadioButton
+	        android:id="@+id/rbMedio"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Médio" />
+	    <RadioButton
+	        android:id="@+id/rbDificil"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Grande" />	
+	    <RadioButton
+	        android:id="@+id/rbMuitoDificil"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Muito Grande" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Partida" 
+        android:layout_gravity="center"/>
+
+</LinearLayout>

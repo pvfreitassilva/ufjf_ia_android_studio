@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">Sobre</string>
+    <string name="app_description">Um jogo de estratégia para Android</string>
+    <string name="app_name">GoMap</string>
+    <string name="settings">Configurações</string>
+</resources>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\build\\intermediates\\res\\merged\\debug\\raw\\preset_move_sound.mid",
+        "source": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\src\\main\\res\\raw\\preset_move_sound.mid"
+    },
+    {
+        "merged": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\build\\intermediates\\res\\merged\\debug\\raw\\invalide_move_sound.mid",
+        "source": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\src\\main\\res\\raw\\invalide_move_sound.mid"
+    },
+    {
+        "merged": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\build\\intermediates\\res\\merged\\debug\\raw\\set_move_sound.mid",
+        "source": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\src\\main\\res\\raw\\set_move_sound.mid"
+    }
+]

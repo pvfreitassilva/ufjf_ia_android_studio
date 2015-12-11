@@ -9,7 +9,7 @@ public class Game extends Activity{
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		//todo alterar orientação da tela
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		
@@ -17,6 +17,4 @@ public class Game extends Activity{
 		
 		setContentView(gameView);
 	}
-	
-	
 }

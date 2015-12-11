@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.edu.granbery.gomap"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="11" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/gomap_icon"
+        android:label="@string/app_name" >
+        <activity android:name="br.edu.granbery.gomap.Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.edu.granbery.gomap.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="br.edu.granbery.gomap.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.edu.granbery.gomap.VersusAndroid"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="br.edu.granbery.gomap.VersusPlayer"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="br.edu.granbery.gomap.GoMap"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="br.edu.granbery.gomap.GOMAP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.edu.granbery.gomap.About"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

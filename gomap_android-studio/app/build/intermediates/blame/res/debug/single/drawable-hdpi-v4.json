@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\navy_blue.png",
+        "source": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\src\\main\\res\\drawable-hdpi\\navy_blue.png"
+    },
+    {
+        "merged": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\low_contrast_linen.png",
+        "source": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\src\\main\\res\\drawable-hdpi\\low_contrast_linen.png"
+    },
+    {
+        "merged": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_settings.png",
+        "source": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\src\\main\\res\\drawable-hdpi\\ic_settings.png"
+    },
+    {
+        "merged": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\nasty_fabric.png",
+        "source": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\src\\main\\res\\drawable-hdpi\\nasty_fabric.png"
+    },
+    {
+        "merged": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_about.png",
+        "source": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\src\\main\\res\\drawable-hdpi\\ic_about.png"
+    },
+    {
+        "merged": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\background.jpg",
+        "source": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\src\\main\\res\\drawable-hdpi\\background.jpg"
+    },
+    {
+        "merged": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\logo.png",
+        "source": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\src\\main\\res\\drawable-hdpi\\logo.png"
+    },
+    {
+        "merged": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\gomap_icon.png",
+        "source": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\src\\main\\res\\drawable-hdpi\\gomap_icon.png"
+    },
+    {
+        "merged": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "D:\\Desenvolvimento-Android\\repositorio_github\\ufjf_ia_android_studio\\gomap_android-studio\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    }
+]
