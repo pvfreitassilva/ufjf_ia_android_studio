@@ -1,3 +1,6 @@
+//TODO tempo de execução
+//TODO
+
 package br.edu.ufjf;
 
 import android.annotation.SuppressLint;
