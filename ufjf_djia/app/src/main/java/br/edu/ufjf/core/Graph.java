@@ -2,8 +2,6 @@ package br.edu.ufjf.core;
 
 import android.graphics.Point;
 
-import java.util.List;
-
 public class Graph {
 	
 	public GraphNode nodes[][];
@@ -29,7 +27,6 @@ public class Graph {
             for(int j = 0; j< Board.GRID_Y_SIZE; j++){
 
                 if(nodes[i][j].type!=Board.BARRIER) {
-                    //TODO ver ordem de inserção
                     if (i < Board.GRID_X_SIZE - 1) {
                         if (Board.grid[i + 1][j] != Board.BARRIER) {
                             nodes[i][j].addAdjacency(nodes[i + 1][j]);

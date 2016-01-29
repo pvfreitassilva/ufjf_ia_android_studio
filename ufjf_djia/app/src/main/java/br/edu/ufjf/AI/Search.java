@@ -2,6 +2,7 @@ package br.edu.ufjf.ai;
 
 import android.graphics.Point;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,10 +12,10 @@ import br.edu.ufjf.core.GraphNode;
 
 public class Search {
 	
-	public final static int PROFUNDIDADE = 0;
-    public final static int LARGURA = 1;
-    public final static int GULOSA = 2;
-    public final static int ORDENADA = 3;
+	public final static int LARGURA = 0;
+    public final static int PROFUNDIDADE = 1;
+    public final static int ORDENADA = 2;
+    public final static int GULOSA = 3;
     public final static int AESTRELA = 4;
 
     private int searchType;
@@ -26,6 +27,7 @@ public class Search {
     int estadosCriados = 0;
     int estadosExpandidos = 0;
     int tamanhoCaminho = 0;
+    long tempo=0;
 
     public Search(Point start, Point end, Graph graph, int searchType) {
 
@@ -44,14 +46,16 @@ public class Search {
         estadosExpandidos = 0;
         tamanhoCaminho = 0;
 
+        long tempoInicial = System.currentTimeMillis();
+
         switch (searchType){
             case PROFUNDIDADE : {
-                profundidade();
+                depth_first();
                 break;
             }
 
             case LARGURA : {
-                largura();
+                breadth_first();
                 break;
             }
 
@@ -61,354 +65,247 @@ public class Search {
             }
 
             case GULOSA : {
-                gulosa();
+                greedy();
                 break;
             }
 
             case AESTRELA : {
-                aestrela();
+                a_star();
                 break;
             }
         }
+
+        tempo =  System.currentTimeMillis() - tempoInicial;
     }
 
 
-    private void largura(){
-
+    private void breadth_first(){
         List<GraphNode> adjacency;
         List<SearchNode> openedList = new ArrayList<SearchNode>();
         List<SearchNode> closedList = new ArrayList<SearchNode>();
-
-        SearchNode auxNode = new SearchNode(graph.getNode(start));
-        SearchNode newNode;
-
-        openedList.add(auxNode);
-
+        SearchNode dadNode = new SearchNode(graph.getNode(start));
+        SearchNode sonNode;
+        openedList.add(dadNode);
         estadosCriados++;
         estadosExpandidos++;
-
-        while(!openedList.isEmpty() && (auxNode.point.x!=end.x || auxNode.point.y!=end.y)){
-
+        while(!openedList.isEmpty() && (dadNode.point.x!=end.x || dadNode.point.y!=end.y)){
             openedList.remove(0);
-
-            closedList.add(auxNode);
-
-            adjacency = auxNode.adjacency;
-
+            closedList.add(dadNode);
+            adjacency = dadNode.adjacency;
             for(GraphNode adjNode : adjacency) {
-                newNode = new SearchNode(adjNode);
-
-                newNode.dad = auxNode;
-
+                sonNode = new SearchNode(adjNode);
+                sonNode.dad = dadNode;
                 boolean contains = false;
-
                 for (SearchNode n : openedList) {
-                    if (newNode.compareTo(n) == 0) {
+                    if (sonNode.compareTo(n) == 0) {
                         contains = true;
                     }
                 }
-
                 for (SearchNode n : closedList) {
-                    if (newNode.compareTo(n) == 0) {
+                    if (sonNode.compareTo(n) == 0) {
                         contains = true;
                     }
                 }
-
                 if (!contains) {
-
-                    openedList.add(newNode);
-
+                    openedList.add(sonNode);
                     estadosCriados++;
-
                 }
             }
-            auxNode = openedList.get(0);
-
+            dadNode = openedList.get(0);
             estadosExpandidos++;
         }
-
-        buildPath(auxNode);
-
+        buildPath(dadNode);
     }
 
-    private void profundidade(){
-
+    private void depth_first(){
         List<GraphNode> adjacency;
         LinkedList<SearchNode> openedList = new LinkedList<SearchNode>();
         LinkedList<SearchNode> closedList = new LinkedList<SearchNode>();
-
         SearchNode auxNode = new SearchNode(graph.getNode(start));
         SearchNode newNode;
-
         openedList.addFirst(auxNode);
-
         estadosCriados++;
-
         while(!openedList.isEmpty() && (auxNode.point.x!=end.x || auxNode.point.y!=end.y)){
-
             openedList.removeLast();
-
             closedList.add(auxNode);
-
             adjacency = auxNode.adjacency;
-
             for(GraphNode adjNode : adjacency) {
-
                 newNode = new SearchNode(adjNode);
-
                 newNode.dad = auxNode;
-
                 boolean contains = false;
-
                 for (SearchNode n : openedList) {
                     if (newNode.compareTo(n) == 0) {
                         contains = true;
                     }
                 }
-
                 for (SearchNode n : closedList) {
                     if (newNode.compareTo(n) == 0) {
                         contains = true;
                     }
                 }
-
                 if (!contains) {
 
                     openedList.addLast(newNode);
                     estadosCriados++;
-
                 }
             }
             auxNode = openedList.getLast();
             estadosExpandidos++;
         }
-
         buildPath(auxNode);
-
     }
 
     private void ordenada(){
-
         List<GraphNode> adjacency = graph.getNode(start).adjacency;
         List<SearchNode> openedList = new ArrayList<SearchNode>();
         List<SearchNode> closedList = new ArrayList<SearchNode>();
-        SearchNode auxNode = new SearchNode(graph.getNode(start));
-        auxNode.evaluation = 0;
-        openedList.add(auxNode);
-        SearchNode newNode;
-
+        SearchNode dadNode = new SearchNode(graph.getNode(start));
+        dadNode.evaluation = 0;
+        openedList.add(dadNode);
+        SearchNode sonNode;
         estadosCriados++;
-
-        while((auxNode.point.x != end.x || auxNode.point.y!=end.y ) && !openedList.isEmpty() )  {
-
+        while((dadNode.point.x != end.x || dadNode.point.y!=end.y ) && !openedList.isEmpty() )  {
             for (GraphNode n : adjacency) {
-
-                newNode = new SearchNode(n);
-
+                sonNode = new SearchNode(n);
                 Boolean contains = false;
-
                 for (SearchNode o : closedList) {
-
-                    if (o.compareTo(newNode) == 0)
+                    if (o.compareTo(sonNode) == 0)
                         contains = true;
                 }
-
                 for (SearchNode o : openedList) {
-
-                    if (o.compareTo(newNode) == 0)
+                    if (o.compareTo(sonNode) == 0)
                         contains = true;
                 }
-
                 if (!contains) {
-                    newNode.dad = auxNode;
-                    newNode.cost = auxNode.cost + 1;
-                    newNode.evaluation = newNode.cost;
-                    openedList.add(newNode);
+                    sonNode.dad = dadNode;
+                    sonNode.cost = dadNode.cost + 1;
+                    sonNode.evaluation = sonNode.cost;
+                    openedList.add(sonNode);
                     estadosCriados++;
                 }
             }
-
-            closedList.add(auxNode);
-
-            openedList.remove(auxNode);
-
+            closedList.add(dadNode);
+            openedList.remove(dadNode);
             if(!openedList.isEmpty()) {
-
                 SearchNode next = openedList.get(0);
-
                 for (SearchNode n : openedList) {
-                    if (n.evaluation < next.evaluation)
+                    if (n.evaluation <= next.evaluation)
                         next = n;
                 }
-
                 adjacency = next.adjacency;
-
-                auxNode = next;
-
+                dadNode = next;
                 estadosExpandidos++;
             }
         }
-
-        buildPath(auxNode);
+        buildPath(dadNode);
     }
 
-    private void aestrela(){
-
+    private void a_star(){
         List<GraphNode> adjacency = graph.getNode(start).adjacency;
         List<SearchNode> openedList = new ArrayList<SearchNode>();
         List<SearchNode> closedList = new ArrayList<SearchNode>();
-        SearchNode auxNode = new SearchNode(graph.getNode(start));
-        auxNode.evaluation = f(auxNode.point, end);
-        openedList.add(auxNode);
-        SearchNode newNode;
+        SearchNode dadNode = new SearchNode(graph.getNode(start));
+        dadNode.evaluation = h(dadNode.point, end);
+        openedList.add(dadNode);
+        SearchNode sonNode;
         path.clear();
-
         estadosCriados++;
-
-        while((auxNode.point.x != end.x || auxNode.point.y!=end.y ) && !openedList.isEmpty() )  {
-
+        while((dadNode.point.x != end.x || dadNode.point.y!=end.y ) && !openedList.isEmpty() )  {
             for (GraphNode n : adjacency) {
-
-                newNode = new SearchNode(n);
-
+                sonNode = new SearchNode(n);
                 Boolean contains = false;
-
                 for (SearchNode o : closedList) {
-
-                    if (o.compareTo(newNode) == 0)
+                    if (o.compareTo(sonNode) == 0)
                         contains = true;
                 }
-
                 for (SearchNode o : openedList) {
 
-                    if (o.compareTo(newNode) == 0)
+                    if (o.compareTo(sonNode) == 0)
                         contains = true;
                 }
-
                 if (!contains) {
-
-                    newNode.dad = auxNode;
-                    newNode.cost = auxNode.cost + 1;
-                    newNode.evaluation = f(newNode.point, end) + newNode.cost;
-                    openedList.add(newNode);
+                    sonNode.dad = dadNode;
+                    sonNode.cost = dadNode.cost + 1;
+                    sonNode.evaluation = h(sonNode.point, end) + sonNode.cost;
+                    openedList.add(sonNode);
                     estadosCriados++;
                 }
             }
-
-            closedList.add(auxNode);
-
-            openedList.remove(auxNode);
-
+            closedList.add(dadNode);
+            openedList.remove(dadNode);
             if(!openedList.isEmpty()) {
-
                 SearchNode next = openedList.get(0);
-
                 for (SearchNode n : openedList) {
-                    if (n.evaluation < next.evaluation)
+                    if (n.evaluation <= next.evaluation)
                         next = n;
                 }
-
                 adjacency = next.adjacency;
-
-                auxNode = next;
-
+                dadNode = next;
                 estadosExpandidos++;
             }
         }
-
-        buildPath(auxNode);
-
+        buildPath(dadNode);
     }
 
-    private void gulosa(){
-
+    private void greedy(){
         List<GraphNode> adjacency = graph.getNode(start).adjacency;
         List<SearchNode> openedList = new ArrayList<SearchNode>();
         List<SearchNode> closedList = new ArrayList<SearchNode>();
-        SearchNode auxNode = new SearchNode(graph.getNode(start));
-        auxNode.evaluation = f(auxNode.point, end);
-        openedList.add(auxNode);
-        SearchNode newNode = null;
-
+        SearchNode dadNode = new SearchNode(graph.getNode(start));
+        dadNode.evaluation = h(dadNode.point, end);
+        openedList.add(dadNode);
+        SearchNode sonNode;
         estadosCriados++;
-
-        while((auxNode.point.x != end.x || auxNode.point.y!=end.y ) && !openedList.isEmpty() )  {
-
+        while((dadNode.point.x != end.x || dadNode.point.y!=end.y ) && !openedList.isEmpty() )  {
             for (GraphNode n : adjacency) {
-
-                newNode = new SearchNode(n);
-
+                sonNode = new SearchNode(n);
                 Boolean contains = false;
-
                 for (SearchNode o : closedList) {
-
-                    if (o.compareTo(newNode) == 0)
+                    if (o.compareTo(sonNode) == 0)
                         contains = true;
                 }
-
                 for (SearchNode o : openedList) {
-
-                    if (o.compareTo(newNode) == 0)
+                    if (o.compareTo(sonNode) == 0)
                         contains = true;
                 }
-
                 if (!contains) {
-
-                    newNode.dad = auxNode;
-                    newNode.evaluation = f(newNode.point, end);
-                    openedList.add(newNode);
+                    sonNode.dad = dadNode;
+                    sonNode.evaluation = h(sonNode.point, end);
+                    openedList.add(sonNode);
                     estadosCriados++;
                 }
             }
-
-            closedList.add(auxNode);
-
-            openedList.remove(auxNode);
-
+            closedList.add(dadNode);
+            openedList.remove(dadNode);
             if(!openedList.isEmpty()) {
-
                 SearchNode next = openedList.get(0);
-
                 for (SearchNode n : openedList) {
-                    if (n.evaluation < next.evaluation)
+                    if (n.evaluation <= next.evaluation)
                         next = n;
                 }
-
                 adjacency = next.adjacency;
-
-                auxNode = next;
+                dadNode = next;
                 estadosExpandidos++;
             }
         }
-
-       buildPath(auxNode);
+        buildPath(dadNode);
     }
 
-    private static int f(Point p1, Point p2){
+    private static int h(Point p1, Point p2){
         return Math.abs(p2.x - p1.x) + Math.abs(p2.y - p1.y);
     }
 
     private void buildPath(SearchNode endOfPath){
-
         path.clear();
-
         if((endOfPath.point.x==end.x && endOfPath.point.y==end.y)) {
-
             SearchNode answer = endOfPath;
-
             while (answer.dad.point.x != start.x || answer.dad.point.y != start.y) {
                 tamanhoCaminho++;
                 path.addFirst(answer.point);
                 answer = answer.dad;
             }
-
             path.addFirst(answer.point);
-
-            //TODO refazer atualizacao do ponto
-            //start.x = answer.point.x;
-            //start.y = answer.point.y;
         }
-
     }
 
     public Point nextMove(){
@@ -419,18 +316,14 @@ public class Search {
         return path;
     }
 
-    private class SearchNode extends GraphNode implements Comparable{
+    public int getSearchType() {
+        return searchType;
+    }
 
+    private class SearchNode extends GraphNode implements Comparable{
         public SearchNode dad;
         public int evaluation;
         public int cost;
-
-        public SearchNode (Point point, int type){
-            super(point, type);
-            cost = 0;
-            evaluation = 0;
-        }
-
         public SearchNode(GraphNode graphNode) {
             super(graphNode.point, graphNode.type);
             adjacency = graphNode.adjacency;
@@ -453,6 +346,42 @@ public class Search {
 
             return "x: "+point.x+" , y: "+point.y;
         }
+    }
+
+    @Override
+    public String toString() {
+
+        String type="";
+
+        switch (searchType){
+            case 0 : {
+                type = "Largura:     ";
+                break;
+            }
+            case 1 : {
+                type = "Profundidade:";
+                break;
+            }
+            case 2 : {
+                type = "Ordenada:    ";
+                break;
+            }
+            case 3 : {
+                type = "Gulosa:      ";
+                break;
+            }
+            case 4 : {
+                type = "A*:          ";
+                break;
+            }
+
+        }
+
+        return  type +
+                "\tGerados = " + estadosCriados +
+                ",\tExpandidos = " + estadosExpandidos +
+                ",\tCaminho = " + tamanhoCaminho +
+                ",\tTempo = " + tempo + " ms";
     }
 }
 

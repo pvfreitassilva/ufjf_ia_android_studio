@@ -1,64 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d98a5176-1f96-45f9-8170-805fc48c6956" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\.project" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\.settings\org.eclipse.core.resources.prefs" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\.settings\org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\README.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\lint.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable-hdpi\background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable-hdpi\gomap_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable-hdpi\ic_about.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable-hdpi\ic_settings.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable-hdpi\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable-hdpi\low_contrast_linen.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable-hdpi\nasty_fabric.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable-hdpi\navy_blue.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable-ldpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable\app_background.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable\fabric_background.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable\linen_background.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\drawable\navy_background.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\layout\about.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\layout\menu.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\layout\options.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\layout\splash.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\raw\invalide_move_sound.mid" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\raw\preset_move_sound.mid" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\raw\set_move_sound.mid" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\src\br\edu\granbery\ai\AlphaBeta.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\src\br\edu\granbery\core\Board.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\src\br\edu\granbery\core\BoardNode.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\src\br\edu\granbery\core\BoardStack.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\src\br\edu\granbery\core\Graph.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\src\br\edu\granbery\core\GraphBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\src\br\edu\granbery\core\Piece.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\src\br\edu\granbery\gomap\About.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\src\br\edu\granbery\gomap\Game.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\src\br\edu\granbery\gomap\GameInstance.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\src\br\edu\granbery\gomap\GoMap.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\src\br\edu\granbery\gomap\Menu.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\gomap\src\br\edu\granbery\gomap\Splash.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/Board.java" afterPath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/Enemy.java" afterPath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/Enemy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/GameInstance.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/core/Board.class" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/core/Board.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/core/Enemy.class" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/core/Enemy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/core/Entity.class" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/core/Entity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/Game.class" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/Game.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/GameView$1.class" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/GameView$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/GameView$2.class" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/GameView$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/GameView$3.class" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/GameView$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/GameView$4.class" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/GameView$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/GameView.class" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/GameView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/core/Graph.class" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/core/Graph.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/ai/Search$SearchNode.class" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/ai/Search$SearchNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/ai/Search.class" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/classes/debug/br/edu/ufjf/ai/Search.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/outputs/apk/app-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/../ufjf_djia/.gradle/2.8/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/../ufjf_djia/app/build/intermediates/dex/debug/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/../ufjf_djia/.gradle/2.8/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/../ufjf_djia/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/../ufjf_djia/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../ufjf_djia/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/core/Board.java" afterPath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/core/Board.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/core/Enemy.java" afterPath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/core/Enemy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/core/Entity.java" afterPath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/core/Entity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/Game.java" afterPath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/GameView.java" afterPath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/GameView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/GraphNode.java" afterPath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/GraphNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/.idea/misc.xml" afterPath="$PROJECT_DIR$/../ufjf_djia/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/core/Graph.java" afterPath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/core/Graph.java" />
+      <change type="MODIFICATION" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\java\br\edu\ufjf\ai\Search.java" afterPath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/ai/Search.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ufjf_djia/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ufjf_djia/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\java\br\edu\ufjf\Search.java" afterPath="$PROJECT_DIR$/../ufjf_djia/app/src/main/java/br/edu/ufjf/IA/Search.java" />
     </list>
     <ignored path="gomap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,11 +68,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AlphaBeta.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/granbery/ai/AlphaBeta.java">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/granbery/gomap/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="7.52459">
-              <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.7431694">
+              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -1636,7 +1628,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="AndroidView" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -1648,10 +1640,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1667,7 +1655,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1677,15 +1665,29 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gomap" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidSourceTypeNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="granbery" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gomap" />
@@ -1699,45 +1701,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidSourceTypeNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="granbery" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gomap" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="granbery" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ai" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1893,37 +1882,37 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24886535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1934,7 +1923,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/import-summary.txt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/granbery/ai/AlphaBeta.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1942,11 +1931,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/import-summary.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/granbery/core/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1954,7 +1949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12164579">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1962,14 +1956,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12164579">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/granbery/ai/AlphaBeta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.52459">
-          <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.60382515">
+          <caret line="181" column="21" selection-start-line="181" selection-start-column="21" selection-end-line="181" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/edu/granbery/gomap/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7431694">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
           <folding />
         </state>
       </provider>

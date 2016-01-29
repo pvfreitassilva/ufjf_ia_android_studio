@@ -10,8 +10,11 @@ public class Enemy extends Entity implements Comparable{
 
     private Search search;
 
-    public Enemy(Point point, Point objective, Graph graph, int searchType){
+    public int color;
+
+    public Enemy(Point point, Point objective, Graph graph, int searchType, int color){
         super(point);
+        this.color=color;
         search = new Search(point, objective, graph, searchType);
 	}
 
@@ -22,7 +25,7 @@ public class Enemy extends Entity implements Comparable{
         point.x = nextPoint.x;
         point.y = nextPoint.y;
 
-        //TODO fazer proximo passo
+        imprimeDados();
     }
 
     public List<Point> getPath(){
@@ -38,16 +41,13 @@ public class Enemy extends Entity implements Comparable{
         return -1;
     }
 
-/*
+
     private void imprimeDados(){
-
-        Log.d("Teste", "Inimigo: "+ x + ", "+y);
-        Log.d("Teste", "Busca: "+ searchType);
-        Log.d("Teste", "Estados criados: "+ estadosCriados);
-        Log.d("Teste", "Estados expandidos: "+ estadosExpandidos);
-        Log.d("Teste", "Tamanho do caminho: "+ tamanhoCaminho);
-
-
+        System.out.println(search.toString());
+        //Log.d("teste", search.toString());
     }
-*/
+
+    public int getSearchType() {
+        return search.getSearchType();
+    }
 }
