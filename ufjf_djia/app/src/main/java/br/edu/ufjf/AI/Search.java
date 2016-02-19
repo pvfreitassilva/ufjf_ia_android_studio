@@ -2,7 +2,6 @@ package br.edu.ufjf.ai;
 
 import android.graphics.Point;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -60,7 +59,7 @@ public class Search {
             }
 
             case ORDENADA : {
-                ordenada();
+                uniform();
                 break;
             }
 
@@ -144,7 +143,6 @@ public class Search {
                     }
                 }
                 if (!contains) {
-
                     openedList.addLast(newNode);
                     estadosCriados++;
                 }
@@ -155,7 +153,7 @@ public class Search {
         buildPath(auxNode);
     }
 
-    private void ordenada(){
+    private void uniform(){
         List<GraphNode> adjacency = graph.getNode(start).adjacency;
         List<SearchNode> openedList = new ArrayList<SearchNode>();
         List<SearchNode> closedList = new ArrayList<SearchNode>();
@@ -205,7 +203,7 @@ public class Search {
         List<SearchNode> openedList = new ArrayList<SearchNode>();
         List<SearchNode> closedList = new ArrayList<SearchNode>();
         SearchNode dadNode = new SearchNode(graph.getNode(start));
-        dadNode.evaluation = h(dadNode.point, end);
+        dadNode.evaluation = heuristic(dadNode.point, end);
         openedList.add(dadNode);
         SearchNode sonNode;
         path.clear();
@@ -226,7 +224,7 @@ public class Search {
                 if (!contains) {
                     sonNode.dad = dadNode;
                     sonNode.cost = dadNode.cost + 1;
-                    sonNode.evaluation = h(sonNode.point, end) + sonNode.cost;
+                    sonNode.evaluation = heuristic(sonNode.point, end) + sonNode.cost;
                     openedList.add(sonNode);
                     estadosCriados++;
                 }
@@ -252,7 +250,7 @@ public class Search {
         List<SearchNode> openedList = new ArrayList<SearchNode>();
         List<SearchNode> closedList = new ArrayList<SearchNode>();
         SearchNode dadNode = new SearchNode(graph.getNode(start));
-        dadNode.evaluation = h(dadNode.point, end);
+        dadNode.evaluation = heuristic(dadNode.point, end);
         openedList.add(dadNode);
         SearchNode sonNode;
         estadosCriados++;
@@ -270,7 +268,7 @@ public class Search {
                 }
                 if (!contains) {
                     sonNode.dad = dadNode;
-                    sonNode.evaluation = h(sonNode.point, end);
+                    sonNode.evaluation = heuristic(sonNode.point, end);
                     openedList.add(sonNode);
                     estadosCriados++;
                 }
@@ -291,7 +289,7 @@ public class Search {
         buildPath(dadNode);
     }
 
-    private static int h(Point p1, Point p2){
+    private static int heuristic(Point p1, Point p2){
         return Math.abs(p2.x - p1.x) + Math.abs(p2.y - p1.y);
     }
 

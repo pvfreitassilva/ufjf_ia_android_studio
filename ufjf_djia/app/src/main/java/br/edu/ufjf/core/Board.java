@@ -15,10 +15,10 @@ public class Board {
 	public static final int GAMEOVER = 1;
 	public static final int RESUME = 2;
     public static final int BUILDING_BOARD = 3;
-    public static final int BUILDING_MAP = 4;
-	public static final int CHANGING_PLAYER_POSITION = 5;
-	public static final int CHANGING_GOAL_POSITION = 6;
-	public static final int ADDING_NEW_ENEMY = 7;
+    //public static final int BUILDING_MAP = 4;
+	//public static final int CHANGING_PLAYER_POSITION = 5;
+	//public static final int CHANGING_GOAL_POSITION = 6;
+	//public static final int ADDING_NEW_ENEMY = 7;
 	
 	public static Integer grid[][];
 	
@@ -53,14 +53,14 @@ public class Board {
 		enemies = new ArrayList<Enemy>();
 	}
 
-    public boolean changeGrid(int x, int y){
+    public void changeGrid(int x, int y){
         if(x<GRID_X_SIZE && y <GRID_Y_SIZE) {
 			if (grid[x][y] != GOAL && !player.point.equals(x, y) && !enemies.contains(new Enemy(new Point(x, y), null, null, -1, -1))) {
 				grid[x][y] = (grid[x][y] == BARRIER) ? EMPTY : BARRIER;
 			}
-			else return false;
+			//else return false;
 		}
-        return true;
+        //return true;
     }
 	
 	public void makeEnemiesMove(){
@@ -165,7 +165,7 @@ public class Board {
 		return grid;
 	}
 
-	public void removeEnemis() {
-		enemies.clear();
-	}
+//	public void removeEnemies() {
+//		enemies.clear();
+//	}
 }

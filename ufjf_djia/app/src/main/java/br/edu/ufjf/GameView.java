@@ -5,6 +5,7 @@ package br.edu.ufjf;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -42,6 +43,13 @@ public class GameView extends View{
 	@Override
 	public void onDraw(Canvas canvas){
 		super.onDraw(canvas);
+
+        int editMapMenuHeight = getHeight()/5;
+        int boardHeight = getHeight() - editMapMenuHeight;
+        int boardWidth = getWidth() - getWidth()/5;
+
+
+
         squareSize = Board.GRID_Y_SIZE > Board.GRID_X_SIZE ? getHeight() / Board.GRID_Y_SIZE : getWidth() / Board.GRID_X_SIZE ;
         mapTranslationX = ( getWidth()  - squareSize * Board.GRID_X_SIZE)/2;
         mapTranslationY = ( getHeight() - squareSize * Board.GRID_Y_SIZE)/2;
@@ -66,14 +74,11 @@ public class GameView extends View{
 
 			paint.setColor(enemy.color);
 			for(Point p : enemy.getPath()) {
-				//canvas.drawCircle(p.x * squareSize + squareSize / 2 - squareSize / 4, p.y * squareSize + squareSize / 2 + squareSize / 4, squareSize / 4, paint);
                 canvas.drawCircle(  p.x * squareSize + squareSize / 2 + enemiesTranslations[pathTranslation][0],
                                     p.y * squareSize + squareSize / 2 + enemiesTranslations[pathTranslation][1],
                                     squareSize/6, paint);
 			}
 
-            //if(enemy.getPath()==null || enemy.getPath().isEmpty()) paint.setColor(Color.BLACK);
-			//else
 			paint.setColor(enemy.color);
 
 			canvas.drawCircle(  enemy.point.x * squareSize + squareSize/2 + enemiesTranslations[pathTranslation][0],
@@ -153,7 +158,7 @@ public class GameView extends View{
                 showBuildingMapDialog(eventX, eventY);
                 return false;
             }
-            case Board.BUILDING_MAP : {
+            /*case Board.BUILDING_MAP : {
 
                 if(lastX!=eventX || lastY!=eventY) {
                     if(!board.changeGrid(eventX, eventY)) {
@@ -201,7 +206,7 @@ public class GameView extends View{
                     Toast.makeText(getContext(), "Posição inválida! Ação cancelada", Toast.LENGTH_SHORT).show();
                 gameState = Board.BUILDING_BOARD;
                 return false;
-            }
+            }*/
             case Board.RESUME : {
                 try{
                     if(event.getAction()==MotionEvent.ACTION_DOWN || event.getAction()==MotionEvent.ACTION_MOVE){
@@ -429,7 +434,7 @@ public class GameView extends View{
         ab.show();
     }
 
-    private void showChangeMapDialog(){
+   /* private void showChangeMapDialog(){
         final String items[] = {"Novo inimigo","Mudar jogador","Mudar objetivo","Editar barreiras", "Remover inimigos", "Cancelar" };
         AlertDialog.Builder ab = new AlertDialog.Builder(getContext());
         ab.setItems(items, new DialogInterface.OnClickListener() {
@@ -472,7 +477,7 @@ public class GameView extends View{
         });
         ab.setCancelable(true);
         ab.show();
-    }
+    }*/
 
     private void showBuildingMapDialog(final int x, final int y) {
         final String items[] = {"Alterar mapa", "Salvar mapa", "Carregar mapa", "Apagar slot", "Limpar mapa", "Começar jogo", "Cancelar" };
@@ -483,7 +488,10 @@ public class GameView extends View{
                 switch (choice){
 
                     case 0 :{
-                        showChangeMapDialog();
+                        //showChangeMapDialog();
+                        Intent i = new Intent("br.edu.ufjf.ufjf_djia.GAMEEDITOR");
+                        GameInstanceManager.board = board;
+                        getContext().startActivity(i);
                         break;
                     }
                     case 1:{

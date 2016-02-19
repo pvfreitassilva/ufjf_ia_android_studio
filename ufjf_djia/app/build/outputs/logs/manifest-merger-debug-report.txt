@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:2:1-43:12
+ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:2:1-56:12
 	package
 		ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:3:5-26
 		INJECTED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml
@@ -15,6 +15,10 @@ ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\
 		ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:22.2.0] D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:22.2.0] D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml
@@ -32,7 +36,11 @@ ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\
 	android:name
 		ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:12:22-78
 application
-ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:14:5-36:19
+ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:14:5-49:19
+MERGED from [com.android.support:support-v4:22.2.0] D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:22.2.0] D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:17:9-41
 	android:allowBackup
@@ -73,3 +81,22 @@ category#android.intent.category.DEFAULT
 ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:33:17-76
 	android:name
 		ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:33:27-73
+activity#br.edu.ufjf.GameEditor
+ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:36:9-43:20
+	android:label
+		ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:38:13-45
+	android:name
+		ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:37:13-39
+intent-filter#android.intent.category.DEFAULT+br.edu.ufjf.ufjf_djia.GAMEEDITOR
+ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:39:13-42:29
+action#br.edu.ufjf.ufjf_djia.GAMEEDITOR
+ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:40:17-75
+	android:name
+		ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:40:25-72
+meta-data#com.google.android.gms.version
+ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:46:9-48:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:48:13-66
+	android:name
+		ADDED from D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\src\main\AndroidManifest.xml:47:13-58

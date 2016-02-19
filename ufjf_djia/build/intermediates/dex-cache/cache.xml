@@ -2,11 +2,46 @@
 <items version="2" >
 
     <item
+        jar="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\pre-dexed\debug\classes-b493531d97482c399c08d0671a1a8e7049154605.jar" />
+    </item>
+    <item
+        jar="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-88bee409ef62f76690134fbcade0736d47e6a998.jar" />
+    </item>
+    <item
         jar="D:\Desenvolvimento-Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
         <dex dex="D:\Desenvolvimento-Android\Projetos\ufjf_djia\app\build\intermediates\pre-dexed\release\support-v4-18.0.0-8d333860026488b188440bb1161142f337705e47.jar" />
+    </item>
+    <item
+        jar="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\pre-dexed\debug\classes-e8cbed2b34bcfa20d44faa88b95a636e1621253c.jar" />
+    </item>
+    <item
+        jar="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\pre-dexed\debug\classes-15bebe5b311757f1db1bf7535553d6286aa9cb90.jar" />
+    </item>
+    <item
+        jar="D:\Desenvolvimento-Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="D:\Desenvolvimento-Android\repositorio_github\ufjf_ia_android_studio\ufjf_djia\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-f9d70aa0524105ee58473300cb6cea553ce527c1.jar" />
     </item>
 
 </items>

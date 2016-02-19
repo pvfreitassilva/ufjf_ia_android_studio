@@ -22,6 +22,7 @@ public class GraphNode{
 		adjacency.add(n);
 	}
 
+	//todo remove
 	@Override
 	public String toString(){
 		return "x: "+point.x+" , y: "+point.y;

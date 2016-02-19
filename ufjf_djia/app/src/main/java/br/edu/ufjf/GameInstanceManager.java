@@ -25,6 +25,8 @@ public final class GameInstanceManager {
     private static final String[] FILENAME = {  "board0.map", "board1.map", "board2.map", "board3.map", "board4.map",
                                                 "board5.map", "board6.map", "board7.map", "board8.map", "board9.map"};
 
+    public static Board board;
+
     public static boolean saveBoard(Board board, int slot, Context context){
         Instance instance = new Instance(board);
 
